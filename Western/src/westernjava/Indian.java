@@ -1,12 +1,7 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package westernjava;
 
 /**
- * caractérise l'Humain de type Indian
+ * characterizes the Indian type human
  *
  * @author Matias & Suarez
  */
@@ -16,13 +11,13 @@ public class Indian extends Human {
       String totem;
 
       /**
-       * construtor
-       *
-       * @param nbFeather nombre de plume sur sa coiffe
-       * @param totem nom de son totem
-       * @param name nom du personnage
-       * @param favoriteDrink boisson favorite du personnage
-       * @param place place actuel du personnage
+        * construtor
+        *
+        * @param nbFeather number of feather on his headdress
+        * @param totem name of his totem
+        * @param name name of the character
+        * @param favoriteDrink favorite drink of the character
+        * @param place character's current place
        */
       public Indian(int nbFeather, String totem, String name, String favoriteDrink, Places place) {
             super(name, favoriteDrink, place);
@@ -31,9 +26,9 @@ public class Indian extends Human {
       }
 
       /**
-       * met en forme lors que le personnage parle
-       *
-       * @param say ce qu'il dit
+        * formats when the character speaks
+        *
+        * @param say what he says
        */
       @Override
       public void talk(String say) {
@@ -41,7 +36,7 @@ public class Indian extends Human {
       }
 
       /**
-       * le personnage se présente
+       * introduces indian
        */
       @Override
       public void introduceYourself() {

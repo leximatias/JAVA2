@@ -1,7 +1,7 @@
 package westernjava;
 
 /**
- * caractérise l'Humain de type Sherif
+ * characterizes the type Sherif
  *
  * @author Matias & Suarez
  */
@@ -26,10 +26,10 @@ public class Sheriff extends Cowboy {
       }
 
       /**
-       * attraper un méchant et le mettre en prison
-       *
-       * @param badboy le méchant
-       * @param places liste des places disponibles
+       * catch a bad guy and put him in jail
+        *
+        * @param badboy the bad guy
+        * @param places list of places available
        */
       public void catchABandit(Bandit badboy, Places[] places) {
             action(this.name + " captures " + badboy.name);
@@ -37,10 +37,10 @@ public class Sheriff extends Cowboy {
       }
 
       /**
-       * attraper un méchant et le mettre en prison
-       *
-       * @param badgirl la méchante
-       * @param places liste des places disponibles
+        *catch a bad guy and put him in jail
+        *
+        * @param badgirl the wicked
+        * @param places list of places available
        */
       public void catchABandit(BanditLady badgirl, Places[] places) {
             action(this.name + " captures " + badgirl.name);
@@ -49,10 +49,10 @@ public class Sheriff extends Cowboy {
       }
 
       /**
-       * attraper un méchant et le mettre en prison
-       *
-       * @param badcop le méchant
-       * @param places liste des places disponibles
+       * catch a bad guy and put him in jail
+        *
+        * @param badcop the bad guy
+        * @param places list of places available
        */
       public void catchABandit(BadCop badcop, Places[] places) {
             action(this.name + " captures " + badcop.name);
@@ -61,10 +61,11 @@ public class Sheriff extends Cowboy {
       }
 
       /**
-       * mettre une récompense sur la tête d'un méchant
-       *
-       * @param badboy le méchant
-       * @param money la récompense
+        * put a reward on the head of a villain
+        *
+        * @param badboy the bad guy
+        * @param money the reward
+        * 
        */
       public void searchABandit(Bandit badboy, int money) {
             action(this.name + " is giving out a reward to find " + badboy.name);
@@ -73,27 +74,27 @@ public class Sheriff extends Cowboy {
       }
       
        /**
-       * mettre une récompense sur la tête d'un méchant
-       *
-       * @param badboy le méchant
-       * @param money la récompense
+        *put a reward on the head of a villain
+        *
+        * @param badboy the bad guy
+        * @param money the reward
        */
-      public void searchABandit(BadCop badboy, int money) {
-            action(this.name + " is giving out a reward to find " + badboy.name);
-            badboy.addReward(money);
-            talk("Listen everyone, " + badboy.name + " is sought for " + badboy.reward + " dollars!");
+    public void searchABandit(BadCop badboy, int money) {
+        action(this.name + " is giving out a reward to find " + badboy.name);
+        badboy.addReward(money);
+        talk("Listen everyone, " + badboy.name + " is sought for " + badboy.reward + " dollars!");
       }
 
       /**
-       * se présenter
+       * presents
        */
-      @Override
-      public void introduceYourself() {
-            action(this.name + " presents.");
-            talk("Hello, I'm the new sheriff in town! I am " + name + " at your service!");
-      }
+    @Override
+    public void introduceYourself() {
+        action(this.name + " presents.");
+        talk("Hello, I'm the new sheriff in town! I am " + name + " at your service!");
+    }
       
-//    public String whatIsYourName(){
-//        return this.getName() + " the protector of this town!";
-//    } 
+    public String whatIsYourName(){
+        return this.getName() + " the protector of this town!";
+    } 
 }

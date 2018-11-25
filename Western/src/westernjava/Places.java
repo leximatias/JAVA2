@@ -15,8 +15,8 @@ public abstract class Places {
       /**
        * constructor
        *
-       * @param name nom du lieux
-       * @param people liste des gens dans ce lieux
+       * @param name place name
+       * @param people list people in this places
        */
       public Places(String name, ArrayList<Human> people) {
             this.name = name;
@@ -24,16 +24,16 @@ public abstract class Places {
       }
 
       /**
-       * permet à un personnage d'enter dans le lieux
-       *
-       * @param person personnage qui entre dans le lieu
+        * allows a character to enter in the places
+        *
+        * @param person who enters the place
        */
       public abstract void enter(Human person);
 
       /**
-       * permet a un personnage de quitter le lieu
-       *
-       * @param person personnage qui quitte le lieu
+        * allows a character to leave the place
+        *
+        * @param person who leaves the place
        */
       public abstract void exit(Human person);
 

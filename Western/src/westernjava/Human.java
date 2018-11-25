@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package westernjava;
 
 /**
@@ -90,7 +85,7 @@ public class Human {
       }
 
       /**
-       * permet de sortir d'un endroit
+       * get out of place
        */
       public void goOut() {
             place.exit(this);
@@ -98,9 +93,9 @@ public class Human {
       }
 
       /**
-       * permet de commander un verre au barman
-       *
-       * @param favoriteDrink le verre qu'il va commander
+       * allows to order a glass to the bartender
+        *
+        * @param favoriteDrink the glass he will order
        */
       public void orderADrink(String favoriteDrink) {
             Bar bar = (Bar) this.place;

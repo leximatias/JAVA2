@@ -32,9 +32,9 @@ public class MainStreet extends Places {
       }
 
       /**
-       * permet à un personnage d'enter dans le places
-       *
-       * @param person person personnage qui entre dans le place
+       * allows a character to enter in the places
+        *
+        * @param person person who enters the place
        */
       @Override
       public void enter(Human person) {

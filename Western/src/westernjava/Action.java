@@ -431,13 +431,13 @@ public class Action {
       }
 
       /**
-       * affiche et exécute les actions disponible pour le character obj
-       *
-       * @param choice 0 pour random 1 pour choisir 2 pour histoire
-       * @param obj le character qui effectue l'action
-       * @param list_places liste des places implémentés
-       * @param list liste des characters disponibles
-       * @return un character de type Shérif
+        * displays and executes available actions for the character obj
+        *
+        * @param choice 0 for random 1 to choose 2 for history
+        * @param obj the character doing the action
+        * @param list_places list of implemented places
+        * @param list list of available characters
+        * @return a sheriff type character
        */
       public Sheriff sherif(int choice, Sheriff obj, Places[] list_places,
                ArrayList<ArrayList<ArrayList<Human>>> list) {
@@ -569,13 +569,13 @@ public class Action {
       }
 
       /**
-       * affiche et exécute les actions disponible pour le character obj
-       *
-       * @param choice 0 pour random 1 pour choisir 2 pour histoire
-       * @param obj le character qui effectue l'action
-       * @param list_places liste des places implémentés
-       * @param list liste des characters disponibles
-       * @return un character de type BadCop
+            displays and executes available actions for the character obj
+        *
+        * @param choice 0 for random 1 to choose 2 for history
+        * @param obj the character doing the action
+        * @param list_places list of implemented places
+        * @param list list of available characters
+        * @return a sheriff type character
        */
       public BadCop badcop(int choice, BadCop obj, Places[] list_places,
                ArrayList<ArrayList<ArrayList<Human>>> list) {
@@ -725,13 +725,13 @@ public class Action {
       }
 
       /**
-       * affiche et exécute les actions disponible pour le character obj
-       *
-       * @param choice 0 pour random 1 pour choisir 2 pour histoire
-       * @param obj le character qui effectue l'action
-       * @param list_places liste des places implémentés
-       * @param list liste des characters disponibles
-       * @return un character de type bandit
+        * displays and executes actions available for the character obj
+        *
+        * @param choice 0 for random 1 to choose 2 for history
+        * @param obj the character doing the action
+        * @param list_places list of implemented places
+        * @param list list of available characters
+        * @return a character of type bandit
        */
       public Bandit bandit(int choice, Bandit obj, Places[] list_places,
                ArrayList<ArrayList<ArrayList<Human>>> list) {
@@ -855,13 +855,13 @@ public class Action {
       }
 
       /**
-       * affiche et exécute les actions disponible pour le character obj
-       *
-       * @param choice 0 pour random 1 pour choisir 2 pour histoire
-       * @param obj le character qui effectue l'action
-       * @param list_places liste des places implémentés
-       * @param list liste des characters disponibles
-       * @return un character de type Indian
+        * displays and executes actions available for the character obj
+        *
+        * @param choice 0 for random 1 to choose 2 for history
+        * @param obj the character doing the action
+        * @param list_places list of implemented places
+        * @param list list of available characters
+        * @return an Indian type character
        */
       public Indian indian(int choice, Indian obj, Places[] list_places,
                ArrayList<ArrayList<ArrayList<Human>>> list) {
@@ -952,13 +952,13 @@ public class Action {
       }
 
       /**
-       * redirige vers la fonction correspondante au type de man
-       *
-       * @param choice 0 pour random 1 pour choisir 2 pour histoire
-       * @param man le character qui effectue l'action
-       * @param list_places liste des places implémentés
-       * @param list liste des characters disponibles
-       * @return un character de type Human
+        * redirects to the function corresponding to the type of man
+        *
+        * @param choice 0 for random 1 to choose 2 for history
+        * @param man the character that performs the action
+        * @param list_places list of implemented places
+        * @param list list of available characters
+        * @return a character of type Human
        */
       public Human human(int choice, Human man, Places[] list_places,
                ArrayList<ArrayList<ArrayList<Human>>> list) {

@@ -1,8 +1,3 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package westernjava;
 
 import java.util.ArrayList;
@@ -16,10 +11,10 @@ import java.util.Random;
 public class Person {
 
       /**
-       * choisit une lady au hasard
-       *
-       * @param ladyTable liste contenant toutes les Lady
-       * @return un character de type Lady
+         * choose a random lady
+        *
+        * @param ladyTable list containing all Lady
+        * @return a character of type Lady
        */
       public Lady randomLady(ArrayList<ArrayList<Human>> ladyTable) {
             int col, line;
@@ -37,10 +32,10 @@ public class Person {
             return (null);
       }
       /**
-       * choisit une thuglady au hasard
-       *
-       * @param ladyTable liste contenant toutes les Lady
-       * @return un character de type ThugLady
+       * chooses a random thuglady
+        *
+        * @param ladyTable list containing all Lady
+        * @return a character of type BanditLady
        */
       public BanditLady randomThugLady(ArrayList<ArrayList<Human>> ladyTable) {
             int col, line;
@@ -59,10 +54,10 @@ public class Person {
       }
 
       /**
-       * choisit un cowboy au hasard
-       *
-       * @param cowboyTable liste contenant toutes les Cowboy
-       * @return un character de type Cowboy
+        *choose a cowboy at random
+        *
+        * @param cowboyTable list containing all Cowboy
+        * @return a character of type Cowboy
        */
       public Cowboy randomCowboy(ArrayList<ArrayList<Human>> cowboyTable) {
             int col, line;
@@ -81,10 +76,10 @@ public class Person {
       }
 
       /**
-       * choisit un sherif au hasard
-       *
-       * @param cowboyTable liste contenant toutes les Cowboy
-       * @return un character de type Sherif
+        * choose a random sheriff
+        *
+        * @param cowboyTable list containing all Cowboy
+        * @return a character of Sherif type
        */
       public Sheriff randomSherif(
                ArrayList<ArrayList<Human>> cowboyTable) {
@@ -127,10 +122,10 @@ public class Person {
       }
 
       /**
-       * choisit un thug au hasard
-       *
-       * @param thugTable liste contenant toutes les Thug
-       * @return un character de type Thug
+        * choose a random bandit
+        *
+        * @param thugTable list containing all thug
+        * @return a character of type Bandit
        */
       public Bandit randomThug(ArrayList<ArrayList<Human>> thugTable) {
             int col, line;
@@ -149,10 +144,10 @@ public class Person {
       }
 
       /**
-       * choisit un indian au hasard
-       *
-       * @param indianTable liste contenant toutes les Indian
-       * @return un character de type Indian
+       * choose a random indian
+        *
+        * @param indianTable list containing all Indian
+        * @return an Indian type character
        */
       public Indian randomIndian(
                ArrayList<ArrayList<Human>> indianTable) {

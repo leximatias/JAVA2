@@ -1,43 +1,40 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package westernjava;
 
 /**
- * caractérise l'Humain appartenant à l'interface OutOfLaw
+ * characterizes the Human belonging to the OutOfLaw interface
  *
  * @author Matias & Suarez
  */
 public interface OutOfLaw {
 
       /**
-       * permet de kidnapper une fille
-       *
-       * @param girl Lady qui est kidnappé
-       */
+        * allows to kidnap a girl
+        *
+        * @param girl Lady who is kidnapped
+        */
+
       void kidnappedLady(Lady girl);
 
       /**
-       * met le personnage en prison
-       *
-       * @param boy sherif qui met en prison le personnage
-       * @param places liste de places disponibles
+       * put the character in jail
+        *
+        * @param boy sheriff who puts in prison the character
+        * @param places list of places available
        */
       void getInJail(Cowboy boy, Places[] places);
 
       /**
-       * ajoute de l'argent à la récompense
-       *
-       * @param money int correspondant à l'argent ajouter à la récompense
+        *add money to the reward
+        *
+        * @param money int matching the money add to the reward
        */
       void addReward(int money);
       
       String getReward();
       String whatIsYourName();
       /**
-       * le personnage s'echappe de prison
+       * the character escapes from prison
        */
       void escape();
 

@@ -48,7 +48,7 @@ public class BanditLady extends Lady implements OutOfLaw {
       }
 
       /**
-       * s'echapper de prison
+       * scape from prison
        */
       @Override
       public void escape() {

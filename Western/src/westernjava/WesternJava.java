@@ -78,6 +78,32 @@ public class WesternJava {
        * @throws java.io.IOException
        */
       public static void main(String[] args) throws IOException {
+          
+            System.out.println("WELCOME TO THE WILD WILD WEST!");
+            System.out.println("             .");
+            System.out.println("          \\  :  /");
+            System.out.println("           ' _ '");
+            System.out.println("        -= ( (_) ) =-");
+            System.out.println("            .   .");
+            System.out.println("           /  :  \\");
+            System.out.println("       .-.    '");
+            System.out.println("       |.|");
+            System.out.println("     /)|`|(\\");
+            System.out.println("    (.(|'|)`)");
+            System.out.println("~~~~`\\`'. /'~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+            System.out.println("      |.|           ~~");
+            System.out.println("      |`|                            ~~");
+            System.out.println("     ,|'|.      (_)          ~~");
+            System.out.println("      \"'\"        \\\"\\");
+            System.out.println("            ~~     ^~^");
+            System.out.println("");
+            System.out.println("");
+
+
+          
+            
+            
+
 
             //Creation places
             ArrayList<Human> bar_people = new ArrayList();

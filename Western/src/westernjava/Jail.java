@@ -11,11 +11,11 @@ public class Jail extends Places {
       MainStreet out;
 
       /**
-       * constructor
-       *
-       * @param out objet de type MainStreet correspondant à la rue devant la prison
-       * @param name nom de la prison
-       * @param people liste des gens à l'intérieur
+      * constructor
+        *
+        * @param out MainStreet type object corresponding to the street in front of the prison
+        * @param name name of the prison
+        * @param people list of people inside
        */
       public Jail(MainStreet out, String name, ArrayList<Human> people) {
             super(name, people);
@@ -23,9 +23,9 @@ public class Jail extends Places {
       }
 
       /**
-       * permet a un character de quitter le place
-       *
-       * @param person character qui quitte le place
+       * allows a character to leave the place
+        *
+        * @param person character leaving the place
        */
       @Override
       public void exit(Human person) {
@@ -34,9 +34,9 @@ public class Jail extends Places {
       }
 
       /**
-       * permet à un character d'enter dans le places
-       *
-       * @param person character qui entre dans le place
+       * allows a character to enter in places
+        *
+        * @param person character who enters the place
        */
       @Override
       public void enter(Human person) {

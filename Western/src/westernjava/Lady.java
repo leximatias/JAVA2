@@ -1,14 +1,9 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package westernjava;
 
 import java.util.Random;
 
 /**
- * caractérise l'Humain de type Lady
+ * characterizes the Lady-type human
  *
  * @author Matias & Suarez
  */
@@ -90,7 +85,7 @@ public class Lady extends Human {
       }
 
       /**
-       * se présenter
+       * introduction
        */
       @Override
       public void introduceYourself() {

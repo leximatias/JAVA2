@@ -85,11 +85,11 @@ public class Choice {
       }
 
       /**
-       * permet de choisir dans la console le mode souhaité pour le déroulement du projet pour
- chaque mode, permet de choisir le character et l'action dans la console
-       *
-       * @param list liste des characters disponibles
-       * @param list_places liste des places implémentés
+        * allows to choose in the console the desired mode for the progress of the project for 
+        * each mode, allows to choose the character and the action in the console
+        *
+        * @param list list of available characters
+        * @param list_places list of implemented places
        */
       public void mode(ArrayList<ArrayList<ArrayList<Human>>> list, Places[] list_places) {
             Human character;
