@@ -1,7 +1,7 @@
 package westernjava;
 
 /**
- * caractérise l'Humain de type ThugLady
+ * characterizes BanditLady human
  *
  * @author Matias & Suarez
  */
@@ -13,21 +13,21 @@ public class BanditLady extends Lady implements OutOfLaw {
       Boolean isInJail;
 
       /**
-       * constructor
-       *
-       * @param nbKidnappedLady nombre de fille kidnapper
-       * @param reward récompense sur sa tête
-       * @param look attitude
-       * @param isInJail true si emprisonné
-       * @param isKidnapped true si kidnapper
-       * @param dressColor la couleur de sa culotte
-       * @param name nom du personnage
-       * @param favoriteDrink boisson favorite du personnage
-       * @param place place actuel du personnage
+        * constructor
+        *
+        * @param nbKidnappedLady number of girl kidnap
+        * @param reward reward on his head
+        * @param look 
+        * @param isInJail true if trapped
+        * @param isKidnapped true if kidnapped
+        * @param dressColor the color of her panties
+        * @param name name of the character
+        * @param favoriteDrink favorite drink of the character
+        * @param place character's current place
        */
       public BanditLady(int nbKidnappedLady, int reward, String look, Boolean isInJail,
-               boolean isKidnapped, String dressColor, String name, String favoriteDrink, Places place) {
-            super(isKidnapped, dressColor, name, favoriteDrink, place);
+               boolean isKidnapped, String dressColor, String name, String favoriteDrink, Places place,String state) {
+            super(isKidnapped, dressColor, name, favoriteDrink, place,state);
             this.nbKidnappedLady = nbKidnappedLady;
             this.reward = reward;
             this.look = look;
@@ -35,9 +35,9 @@ public class BanditLady extends Lady implements OutOfLaw {
       }
 
       /**
-       * kidnapper une fille
+       * kidnap a girl
        *
-       * @param girl la fille à kidnapper
+       * @param girl the girl to kidnap
        */
       @Override
       public void kidnappedLady(Lady girl) {
@@ -75,10 +75,10 @@ public class BanditLady extends Lady implements OutOfLaw {
       }
 
       /**
-       * ajoute money à la récompense déjà sur la tête du personnage
-       *
-       * @param money la récompense ajoutée
-       */
+       ** adds money to the reward
+        *
+        * @param money the reward added
+        */
       @Override
       public void addReward(int money) {
             reward += money;

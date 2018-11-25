@@ -14,17 +14,17 @@ public class BadCop extends Sheriff implements OutOfLaw {
 
       /**
        * constructor
-       *
-       * @param nbKidnappedLady nombre de fille kidnappées
-       * @param reward récompense sur sa tête
-       * @param look attitude
-       * @param isInJail true si emprisonné
-       * @param popularity popularité
-       * @param adjective adjectif
-       * @param money argent gagné avec les récompenses
-       * @param name nom du personnage
-       * @param favoriteDrink boisson favorite du personnage
-       * @param place place actuel du personnage
+        *
+        * @param nbKidnappedLady number of kidnapped girls
+        * @param reward reward on his head
+        * @param look attitude
+        * @param isInJail true if trapped
+        * @param popularity popularity
+        * @param adjective adjective
+        * @param money money earned with the rewards
+        * @param name name of the character
+        * @param favoriteDrink favorite drink of the character
+        * @param place character's current place
        */
       public BadCop(int nbKidnappedLady, int reward, String look, Boolean isInJail,
                int popularity, String adjective, int money, String name, String favoriteDrink, Places place, int nbCaughtBandit) { // int nbCaughtBandits
@@ -36,10 +36,10 @@ public class BadCop extends Sheriff implements OutOfLaw {
       }
 
       /**
-       * se faire mettre en prison
-       *
-       * @param boy le sherif qui te met en prison
-       * @param places liste des places disponible
+        * get put in jail
+        *
+        * @param boy the sheriff who puts you in prison
+        * @param places list of places available
        */
       @Override
       public void getInJail(Cowboy boy, Places[] places) {
@@ -60,9 +60,9 @@ public class BadCop extends Sheriff implements OutOfLaw {
       }
 
       /**
-       * kidnapper une fille
+       * kidnapp a girl
        *
-       * @param girl la fille à kidnapper
+       * @param girl the girl to be kidnapped
        */
       @Override
       public void kidnappedLady(Lady girl) {
@@ -74,7 +74,7 @@ public class BadCop extends Sheriff implements OutOfLaw {
       }
 
       /**
-       * s'echapper de prison
+       * escape from prison
        */
       @Override
       public void escape() {

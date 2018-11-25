@@ -16,6 +16,7 @@ public class Lady extends Human {
 
       boolean isKidnapped;
       String dressColor;
+      String state;
       Random random = new Random();
 
       /**
@@ -27,7 +28,7 @@ public class Lady extends Human {
        * @param favoriteDrink boisson favorite du personnage
        * @param place place actuel du personnage
        */
-      public Lady(boolean isKidnapped, String dressColor, String name, String favoriteDrink, Places place) {
+      public Lady(boolean isKidnapped, String dressColor, String name, String favoriteDrink, Places place, String state) {
             super(name, favoriteDrink, place);
             this.isKidnapped = isKidnapped;
             this.dressColor = dressColor;
@@ -72,8 +73,8 @@ public class Lady extends Human {
        * @param hero le héro
        */
       public void getFree(Cowboy hero) {
-            action(hero.name + " a sauvé " + this.name);
-            talk("Oooh merci " + hero.name + "!");
+            action(hero.name + " saves " + this.name);
+            talk("AHH thank you so much " + hero.name + "!!!");
             isKidnapped = false;
       }
 
@@ -93,7 +94,7 @@ public class Lady extends Human {
        */
       @Override
       public void introduceYourself() {
-            action(this.name + " se présente.");
+            action(this.name + " presents");
             talk("Hello! My name is " + name + ". I will show this town my beauty!");
       }
 

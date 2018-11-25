@@ -84,9 +84,9 @@ public class WesternJava {
             ArrayList<Human> street_people = new ArrayList();
             ArrayList<Human> jail_people = new ArrayList();
 
-            MainStreet street = new MainStreet("Oak Street", street_people);
+            MainStreet street = new MainStreet("Wilson Street", street_people);
 
-            Bartender pierre = new Bartender("Pierre", "eau", street);
+            Bartender pierre = new Bartender("Jackson", "spritz", street, "The Grand West");
             Bar saloon = new Bar(false, street, pierre, "Saloon", bar_people);
 
             Jail prison = new Jail(street, "prison", jail_people);
@@ -121,7 +121,7 @@ public class WesternJava {
             ArrayList<Human> simplebarmanlist = new ArrayList();
             barmanlist.add(simplebarmanlist);
 
-            //Creation character par lecture fichier
+// Creation character by reading file
             String fileName = "initialisation.txt";
             FileReader inp = new FileReader(fileName);
             int nb_line = 0;
@@ -155,7 +155,7 @@ public class WesternJava {
                   switch (type) {
                         case "Lady":
                               parameter.clear();
-                              for (i = 0; i < 5; i++) {
+                              for (i = 0; i < 6; i++) {
                                     while ((n = in.read()) != 44 && n != 59) {
                                           String p = Character.toString((char) n);
                                           para = para + p;
@@ -173,10 +173,10 @@ public class WesternJava {
                                     li = street;
                               }
 
-                              simpleladylist.add(new Lady(bo, parameter.get(1), parameter.get(2), parameter.get(3), li));
+                              simpleladylist.add(new Lady(bo, parameter.get(1), parameter.get(2), parameter.get(3), li,parameter.get(5)));
                               type = "";
                               break;
-                        case "Sherif":
+                        case "Sheriff":
                               parameter.clear();
                               for (i = 0; i < 7; i++) {
 
@@ -201,7 +201,7 @@ public class WesternJava {
                                        parameter.get(5), li));
                               type = "";
                               break;
-                        case "Thug":
+                        case "Bandit":
                               parameter.clear();
                               for (i = 0; i < 7; i++) {
 
@@ -226,9 +226,9 @@ public class WesternJava {
                                        bo, parameter.get(4), parameter.get(5), li));
                               type = "";
                               break;
-                        case "ThugLady":
+                        case "BanditLady":
                               parameter.clear();
-                              for (i = 0; i < 9; i++) {
+                              for (i = 0; i < 10 ; i++) {
 
                                     while ((n = in.read()) != 44 && n != 59) {
                                           String p = Character.toString((char) n);
@@ -248,7 +248,7 @@ public class WesternJava {
                               }
                               thugladylist.add(new BanditLady(Integer.parseInt(parameter.get(0)),
                                        Integer.parseInt(parameter.get(1)), parameter.get(2),
-                                       bo, bo2, parameter.get(5), parameter.get(6), parameter.get(7), li));
+                                       bo, bo2, parameter.get(5), parameter.get(6), parameter.get(7), li,parameter.get(9)));
                               type = "";
                               break;
                         case "Cowboy":

@@ -6,7 +6,7 @@
 package westernjava;
 
 /**
- * caractérise un Humain
+ * characterizes a Human
  *
  * @author Matias & Suarez
  */
@@ -17,11 +17,11 @@ public class Human {
       Places place;
 
       /**
-       * constructor
-       *
-       * @param name nom du personnage
-       * @param favoriteDrink boisson favorite du personnage
-       * @param place place actuel du personnage
+        * constructor
+        *
+        * @param name name of the character
+        * @param favoriteDrink favorite drink of the character
+        * @param place character's current place
        */
       public Human(String name, String favoriteDrink, Places place) {
             this.name = name;
@@ -31,25 +31,26 @@ public class Human {
       }
 
       /**
-       * mets en forme sa parole dans la console
-       *
-       * @param say ce qu'il dit
+        * put his speech in the console
+        *
+        * @param say what he says
+        * /
        */
       public void talk(String say) {
             System.out.println(name + ": " + say);
       }
 
       /**
-       * mets en forme son action dans la console
-       *
-       * @param act
+        * puts his action in the console
+        *
+        * @param act
        */
       public void action(String act) {
             System.out.println("***" + act + "***");
       }
 
       /**
-       * permet de se présenter
+       * allows you to introduce yourself
        */
       public void introduceYourself() {
             action(this.name + " presents.");
@@ -57,9 +58,9 @@ public class Human {
       }
 
       /**
-       * permet de parler à quelqu'un
-       *
-       * @param someone le compagnon de parole
+        * lets talk to someone
+        *
+        * @param someone the talk companion
        */
       public void talkToSomeone(Human someone) {
             introduceYourself();
@@ -68,18 +69,18 @@ public class Human {
       }
 
       /**
-       * permet d'obtenir le nom du personnage
-       *
-       * @return le nom du personnage
+       * get the name of the character
+        *
+        * @return the name of the character
        */
       public String getName() {
             return name;
       }
 
       /**
-       * permet d'aller à un endroit
-       *
-       * @param places la destination
+       * lets go to a place
+        *
+        * @param places the destination
        */
       public void goTo(Places places) {
             place.exit(this);

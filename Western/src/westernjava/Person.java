@@ -172,12 +172,12 @@ public class Person {
       }
 
       /**
-       * choisit un human au hasard si choice 0 sinon un character du type correspondant à num
-       *
-       * @param choice 0 pour random 1 pour choisir 2 pour histoire
-       * @param num correspond au type voulu pour le character override si choice = 0
-       * @param list liste contenant toutes les characters
-       * @return un character de type Human
+        * chooses a random human if choice 0 otherwise a character of type corresponding to num
+        *
+        * @param choice 0 for random 1 to choose 2 for history
+        * @param num is the type you want for the character override if choice = 0
+        * @param list list containing all characters
+        * @return a character of type Human
        */
       public Human randomHuman(int choice, int num,
                ArrayList<ArrayList<ArrayList<Human>>> list) {

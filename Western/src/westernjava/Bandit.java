@@ -1,12 +1,8 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package westernjava;
 
 /**
- * caractérise l'Humain de type Thug
+ * characterizes Bandit human
  *
  * @author Matias & Suarez
  */
@@ -37,20 +33,20 @@ public class Bandit extends Human implements OutOfLaw {
       }
 
       /**
-       * s'echapper de prison
+       * escape from prison
        */
       @Override
       public void escape() {
             if (this.isInJail) {
                   isInJail = false;
-                  action(this.name + " s'échappe");
-                  talk("Je suis liiibre!!!");
+                  action(this.name + " escapes");
+                  talk("I'M FREE!!!");
                   this.goOut();
             }
       }
 
       /**
-       * se présenter
+       * presents
        */
       @Override
       public void introduceYourself() {
@@ -59,9 +55,9 @@ public class Bandit extends Human implements OutOfLaw {
       }
 
       /**
-       * kidnapper une fille
-       *
-       * @param girl la fille à kidnapper
+        * kidnap a girl
+        *
+        * @param girl is the girl to kidnap
        */
       @Override
       public void kidnappedLady(Lady girl) {
@@ -74,10 +70,10 @@ public class Bandit extends Human implements OutOfLaw {
       }
 
       /**
-       * se faire mettre en prison
-       *
-       * @param boy le sherif qui te met en prison
-       * @param places liste des places disponible
+        * get put in jail
+        *
+        * @param boy the sheriff who puts you in prison
+        * @param places list of places available
        */
       @Override
       public void getInJail(Cowboy boy, Places[] places) {
@@ -89,9 +85,9 @@ public class Bandit extends Human implements OutOfLaw {
       }
 
       /**
-       * ajoute money à la récompense déjà sur la tête du personnage
-       *
-       * @param money la récompense ajoutée
+        * adds money to the reward
+        *
+        * @param money the reward added
        */
       @Override
       public void addReward(int money) {

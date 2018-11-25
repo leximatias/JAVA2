@@ -15,11 +15,12 @@ public class Bar extends Places {
 
       /**
        *
-       * @param open true si le bar est ouvert
-       * @param out objet de type MainStreet correspondant à la rue devant le bar
-       * @param barman Humain de type Barman qui sert
-       * @param name nom de la prison
-       * @param people liste des gens à l'intérieur
+        * @param open true if the bar is open
+        * @param out MainStreet type object corresponding to the street in front of the bar
+        * @param barman Human type Barman serving
+        * @param name name of the prison
+        * @param people list of people inside
+        * /
        */
       public Bar(Boolean open, MainStreet out, Bartender barman, String name, ArrayList people) {
             super(name, people);
@@ -38,8 +39,8 @@ public class Bar extends Places {
       }
 
       /**
-       * permet d'ouvrir le bar
-       */
+        * open the bar  
+        */
       public void opening() {
             barman.place.exit(barman);
             open = true;
@@ -47,9 +48,9 @@ public class Bar extends Places {
       }
 
       /**
-       * permet a un personnage de quitter le place
-       *
-       * @param perso personnage qui quitte le place
+        * allows a character to leave the place
+        *
+        * @param perso character who leaves the place
        */
       @Override
       public void exit(Human perso) {
@@ -58,9 +59,9 @@ public class Bar extends Places {
       }
 
       /**
-       * permet à un personnage d'enter dans le places
-       *
-       * @param perso personnage qui entre dans le place
+        * allows a character to enter in the places
+        *
+        * @param perso character who enters the place
        */
       @Override
       public void enter(Human perso) {

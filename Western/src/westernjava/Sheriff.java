@@ -12,13 +12,13 @@ public class Sheriff extends Cowboy {
       /**
        * constructor
        *
-       * @param nbCaughtBandit nombre de méchant attrapés
-       * @param popularity popularité
-       * @param adjective adjectif
-       * @param money argent gagné avec les récompenses
-       * @param name nom du personnage
-       * @param favoriteDrink boisson favorite du personnage
-       * @param place place actuel du personnage
+        * @param nbCaughtBandit number of  caught bandits
+        * @param popularity popularity
+        * @param adjective adjective
+        * @param money money earned with the rewards
+        * @param name name of the character
+        * @param favoriteDrink favorite drink of the character
+        * @param place character's current place
        */
       public Sheriff(int nbCaughtBandit, int popularity, String adjective, int money, String name, String favoriteDrink, Places place) {
             super(popularity, adjective, money, name, favoriteDrink, place);

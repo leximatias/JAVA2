@@ -11,7 +11,7 @@ import static westernjava.WesternJava.printList;
 import static westernjava.WesternJava.displayPerson;
 
 /**
- * permet d'effectuer des choix dans la console
+ * allows you to make choices in the console
  *
  * @author Matias & Suarez
  */
@@ -21,8 +21,7 @@ public class Choice {
       Action action = new Action();
 
       /**
-       * permet de choisir un type donc la console retourne un character au hasard ou choisit en
- fonction de choice
+       * allows to choose a type so the console returns a random character or chooses in  choice function
        *
        * @param choice 0 pour random 1 pour choisir 2 pour histoire
        * @param list liste des characters disponibles
@@ -56,13 +55,12 @@ public class Choice {
       }
 
       /**
-       * après affichage des character disponible en fonction de y retrourne le character choisit
- d'après le nombre en input
-       *
-       * @param choice 0 pour random 1 pour choisir 2 pour histoire
-       * @param y int correspondant au type à afficher (ex:0 pour Lady , 4 pour Indien)
-       * @param list liste des characters disponibles
-       * @return un character de type Human
+        * after display of the available character according to there returns the character chooses according to the number in input
+        *
+        * @param choice 0 for random 1 to choose 2 for history
+        * @param y int corresponding to the type to display (ex: 0 for Lady, 4 for Indian)
+        * @param list list of available characters 
+       * @return a character of type Human
        */
       public Human person(int choice, int y,
                ArrayList<ArrayList<ArrayList<Human>>> list) {

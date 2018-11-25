@@ -91,7 +91,7 @@ public class Action {
 
                         case (1):
 
-                              BanditLady badlady = new BanditLady(0, 0, "mysterious", false, obj.isKidnapped, obj.dressColor, obj.name, obj.favoriteDrink, obj.place);
+                              BanditLady badlady = new BanditLady(0, 0, "mysterious", false, obj.isKidnapped, obj.dressColor, obj.name, obj.favoriteDrink, obj.place, obj.state);
                               list.get(0).get(0).remove(obj);
                               Lady girl = person.randomLady(list.get(0));
                               while (girl == obj) {
@@ -824,7 +824,7 @@ public class Action {
                               if (gettojail == 1) {
                                     Sheriff cop = person.randomSherif(list.get(1));
                                     cop.catchABandit(obj, list_places);
-                                    System.out.println("ou're in prison...");
+                                    System.out.println("You're in prison...");
 
                                     cop.freeTheLady(girl);
                               }
@@ -887,9 +887,9 @@ public class Action {
                               if (obj.place instanceof MainStreet) {
                                     //action dispo street
                                     System.out.println(obj.name + " est sur " + obj.place.name);
-                                    System.out.println("Taper le numero de l'action que vous voulez.");
-                                    System.out.println("0 aller dans le bar");
-                                    System.out.println("1 parler à quelqu'un");
+                                    System.out.println("Type the number of the action you want.");
+                                    System.out.println("0 go to the bar");
+                                    System.out.println("1 talk to someone");
 
                                     input = scanner.nextLine();
                                     num = Integer.parseInt(input);

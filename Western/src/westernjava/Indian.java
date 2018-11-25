@@ -45,7 +45,7 @@ public class Indian extends Human {
        */
       @Override
       public void introduceYourself() {
-        action(this.name + "arrives..");
+        action(this.name + " arrives..");
         talk("Greetings pale face! I am " + name + " " + totem + ". I am part of the tribe at the end of the city. ");
       }
 

@@ -6,28 +6,29 @@
 package westernjava;
 
 /**
- * caractérise l'Humain de type Barman
+ * characterizes the Bartender Human type
  *
- * @author Julie Robillart
+ * @author Matias & Suarez
  */
 public class Bartender extends Human {
 
       /**
        * constructor
-       *
-       * @param name nom du personnage
-       * @param favoriteDrink boisson favorite du personnage
-       * @param place place actuel du personnage
+        *
+        * @param name name of the character
+        * @param favoriteDrink favorite drink of the character
+        * @param place character's current place
+        * /
        */
-      public Bartender(String name, String favoriteDrink, Places place) { //string barName
+      public Bartender(String name, String favoriteDrink, Places place, String barName) { 
             super(name, favoriteDrink, place);
             // this.barName=barName;
       }
 
       /**
-       * ervir un verre à quelqu'un
-       *
-       * @param someone quelqu'un
+        * serve a drink to someone
+        *
+        * @param someone someone
        */
       public void serve(Human someone) {
             action(this.name + " serves a glass to " + someone.name);
@@ -35,9 +36,9 @@ public class Bartender extends Human {
       }
 
       /**
-       * mise en forme de sa parole dans la console
-       *
-       * @param say ce qu'il dit
+        * formatting his speech in the console
+        *
+        * @param say what he says
        */
       @Override
       public void talk(String say) {
@@ -45,7 +46,7 @@ public class Bartender extends Human {
       }
 
       /**
-       * se présenter
+       * introduces himself
        */
       @Override
       public void introduceYourself() {
